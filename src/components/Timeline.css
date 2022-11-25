@@ -1,0 +1,6 @@
+.TimelineContainer {
+    max-height: 100px;
+    overflow-y: scroll;
+    white-space: nowrap;
+    width: 40%;
+} 

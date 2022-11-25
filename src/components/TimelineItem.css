@@ -1,0 +1,14 @@
+.PhotoItem {
+    padding: 5px;
+    max-width: 250px;
+  }
+
+.PhotoGrid {
+    max-width: 100%;
+    grid-gap: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+  }

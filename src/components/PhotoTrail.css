@@ -1,0 +1,17 @@
+.Timeline {
+    width: 100px;
+    float: right;
+  }
+  
+.Map {
+    width: 100px;
+    float: left;
+  }
+
+.PhotoTrail {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid black;
+}
