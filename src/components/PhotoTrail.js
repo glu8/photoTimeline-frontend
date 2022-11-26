@@ -47,7 +47,7 @@ function PhotoTrail(props) {
         console.log("timelineID", timelineID)
         axios({
             method: "GET",
-            url: "http://localhost:1000/timelineData/" + timelineID
+            url: process.env.REACT_APP_BASE_BACKEND_URL + "/timelineData/" + timelineID
         }).then((response) => {
             const res = response.data
 

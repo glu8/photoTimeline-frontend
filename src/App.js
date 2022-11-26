@@ -10,10 +10,10 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App" style={{ position: 'fixed', height: '100%', width: '100%' }}>
-      <NavBar />
-      <div className="PhotoTrailWrapper" style={{ position: 'fixed', height: '96%', width: '100%', bottom: 0 }}>
-        <BrowserRouter>
+    <BrowserRouter>
+      <div className="App" style={{ position: 'fixed', height: '100%', width: '100%' }}>
+        <NavBar />
+        <div className="PhotoTrailWrapper" style={{ position: 'fixed', height: '96%', width: '100%', bottom: 0 }}>
           <Routes>
             <Route path="/photoTimeline/:timelineID" element={
               <PhotoTrail />
@@ -29,9 +29,10 @@ function App() {
             } />
             <Route path="*" element={<Navigate to="/timelineList" replace />} />
           </Routes>
-        </BrowserRouter>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
+
   );
 
 

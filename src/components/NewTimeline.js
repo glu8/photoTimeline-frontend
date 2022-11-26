@@ -15,7 +15,7 @@ export default function NewTimeline() {
 
     function submitTimeline() {
         console.log(timelineName)
-        axios.post("http://localhost:1000/newTimeline",
+        axios.post(process.env.REACT_APP_BASE_BACKEND_URL + "/newTimeline",
             {
                 name: timelineName
             }

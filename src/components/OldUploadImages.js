@@ -26,7 +26,7 @@ export default function UploadImages() {
             formData.append('files', image)
         )
 
-        axios.post("http://localhost:1000/upload", formData, {}).then(res => {
+        axios.post(process.env.REACT_APP_BASE_BACKEND_URL + "/upload", formData, {}).then(res => {
             console.log(res.data)
         })
     }

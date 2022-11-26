@@ -79,8 +79,8 @@ export default function TimelineItem(props) {
                         return (
                             <div className="PhotoItem">
                                 <ModalImage
-                                    small={"http://localhost:1000/image/" + imageId}
-                                    large={"http://localhost:1000/image/" + imageId}
+                                    small={process.env.REACT_APP_BASE_BACKEND_URL + "/image/" + imageId}
+                                    large={process.env.REACT_APP_BASE_BACKEND_URL + "/image/" + imageId}
                                 />
                                 {/* <img key={imageId} src={"http://localhost:1000/image/" + imageId} alt="" resizeMode='contain' width={200} />)*/}
                             </div>)

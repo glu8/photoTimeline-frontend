@@ -12,7 +12,7 @@ function DropZoneUploader(props) {
         body.append('file', file)
         console.log(file)
         body.append('timelineID', props.timelineID)
-        return { url: 'http://localhost:1000/upload', body }
+        return { url: process.env.REACT_APP_BASE_BACKEND_URL + '/upload', body }
     }
 
     // called every time a file's `status` changes
@@ -40,13 +40,13 @@ export default function UploadImages() {
     const [timeline, setTimeline] = useState({})
 
     function generateTimeline() {
-        axios.get("http://localhost:1000/generateTimelineGroups/" + params.timelineID).then(res => {
+        axios.get(process.env.REACT_APP_BASE_BACKEND_URL + "/generateTimelineGroups/" + params.timelineID).then(res => {
             console.log(res.status)
         })
     }
 
     function getTimeline() {
-        axios.get("http://localhost:1000/getOneTimeline/" + params.timelineID).then(res => {
+        axios.get(process.env.REACT_APP_BASE_BACKEND_URL + "/getOneTimeline/" + params.timelineID).then(res => {
             setTimeline(res.data.timeline)
             console.log(res.data.timeline)
         })

@@ -15,7 +15,7 @@ export default function TimelineList() {
     function getTimelineList() {
         axios({
             method: "GET",
-            url: "http://localhost:1000/timelines"
+            url: process.env.REACT_APP_BASE_BACKEND_URL + "/timelines"
         }).then((response) => {
             const res = response.data
             console.log(response.data)
