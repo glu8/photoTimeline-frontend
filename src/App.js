@@ -10,6 +10,8 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
+    <div>Hello World!</div>
+    /*
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App" style={{ position: 'fixed', height: '100%', width: '100%' }}>
         <NavBar />
@@ -31,7 +33,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </BrowserRouter>*/
 
   );
 
