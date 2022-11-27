@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "glu8.github.io/photoTimeline-frontend/precache-manifest.d211c341968488a2f68e435fb0fc6a52.js"
+  "geoffreylu.com/photoTimeline-frontend/precache-manifest.f12bd6aa31fab97a163ab5530e0b3b32.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("glu8.github.io/photoTimeline-frontend/index.html", {
+workbox.routing.registerNavigationRoute("geoffreylu.com/photoTimeline-frontend/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
