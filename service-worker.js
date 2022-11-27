@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "glu8.github.io/photoTimeline-frontend/precache-manifest.6000dc6523fa46e290a41252592118d1.js"
+  "glu8.github.io/photoTimeline-frontend/precache-manifest.d211c341968488a2f68e435fb0fc6a52.js"
 );
 
 workbox.clientsClaim();
