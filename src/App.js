@@ -10,7 +10,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App" style={{ position: 'fixed', height: '100%', width: '100%' }}>
         <NavBar />
         <div className="PhotoTrailWrapper" style={{ position: 'fixed', height: '96%', width: '100%', bottom: 0 }}>
